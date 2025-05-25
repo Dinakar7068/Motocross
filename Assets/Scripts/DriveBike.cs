@@ -18,6 +18,17 @@ public class DriveBike : MonoBehaviour
         moveInput = Input.GetAxisRaw("Horizontal");
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.tag == "coin")
+        {
+            Debug.Log("coin hit");
+
+            Destroy (other.gameObject);
+        }
+    }
+
     private void FixedUpdate()
     {
         frontTireRB.AddTorque(-moveInput * speed * Time.fixedDeltaTime);
