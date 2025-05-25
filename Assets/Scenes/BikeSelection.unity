@@ -217,6 +217,50 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1537822184}
   m_SourcePrefab: {fileID: 100100000, guid: be62fc2430210ab4d9c0cf4bf8456f47, type: 3}
+--- !u!1 &464497425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464497427}
+  - component: {fileID: 464497426}
+  m_Layer: 0
+  m_Name: MoneyAdd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &464497426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464497425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a94c813862e0321448248a438e2376a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &464497427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464497425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 631.6224, y: 325.90347, z: 1.9839427}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &583247246
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +427,7 @@ MonoBehaviour:
   buy: {fileID: 1974625710}
   play: {fileID: 1543648726}
   priceText: {fileID: 835015574}
+  bikePrices: 0000000014000000
 --- !u!4 &707633769
 Transform:
   m_ObjectHideFlags: 0
@@ -775,7 +820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000 $
+  m_text: 0 $
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -859,7 +904,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415530095}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce1bec5c22bf1e7438da017ccf003c86, type: 3}
   m_Name: 
@@ -1072,7 +1117,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1641,3 +1686,4 @@ SceneRoots:
   - {fileID: 707633769}
   - {fileID: 1793696189}
   - {fileID: 1137658864}
+  - {fileID: 464497427}

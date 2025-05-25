@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 7425d76547059784eb160c6112a3230d
   - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 8eef47787a10c0347b281ee4c3b6ce89
+  - enabled: 1
     path: Assets/Scenes/BikeSelection.unity
     guid: 7f9c44d83db76b54f8e60f0ddf8fd125
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FirstLevelComplete.unity
+    guid: d3f475bf99b3e9f4ab188ad36caa5202
   m_configObjects: {}

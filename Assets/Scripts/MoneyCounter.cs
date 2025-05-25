@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MoneyCounter : MonoBehaviour
 {
-    private Text txt;
+    private TextMeshProUGUI txt;
 
     private void Awake()
     {
-        txt = GetComponent<Text>(); 
+        txt = GetComponent<TextMeshProUGUI>(); 
     }
 
     private void Update()

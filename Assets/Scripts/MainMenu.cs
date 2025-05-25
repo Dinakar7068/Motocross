@@ -9,4 +9,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("BikeSelection");
     }
+
+    public void LevelSelectScene()
+    {
+        SceneManager.LoadScene("LevelSelect");
+    }
+
 }
