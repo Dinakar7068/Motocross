@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ca7dc9f7f4ffebe46ade1c6dea6a7c0b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5188679, g: 0.3703868, b: 0.3703868, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -261,8 +261,14 @@ MonoBehaviour:
   frontTireRB: {fileID: 3341211854598244562}
   backTireRB: {fileID: 4732243235367708545}
   carRB: {fileID: 6962811246633826807}
-  speed: 150
-  rotationSpeed: 300
+  speed: 1000
+  maxAngularVelocity: 3000
+  rotationSpeed: 200
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  frontTireCollider: {fileID: 6973617367124729342}
+  backTireCollider: {fileID: 3204820077010323428}
 --- !u!61 &8103066364927491822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -384,7 +390,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 84e0d13cfbc53cd44a41809b62fb96fa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.039215688, g: 0.023529414, b: 0.027450982, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -532,7 +538,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d14fe3791d74bba4d88d51ef6ceec191, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3962264, g: 0.30153078, b: 0.30153078, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

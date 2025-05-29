@@ -9,7 +9,7 @@ public class FinishPoint : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            SceneManager.LoadScene("FirstLevelComplete");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
             SaveManager.instance.money += 10;
             SaveManager.instance.Save();
         }

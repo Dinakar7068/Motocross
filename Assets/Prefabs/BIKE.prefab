@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6157946237759625703}
   m_Layer: 0
   m_Name: SuperMotoFrame
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b5ea4a16d0baddd4d8936d0af727de44, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.509434, g: 0.3444286, b: 0.3444286, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -180,7 +180,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -260,8 +260,14 @@ MonoBehaviour:
   frontTireRB: {fileID: 3946549311909309592}
   backTireRB: {fileID: 3464086255234491111}
   carRB: {fileID: 5697543077755286395}
-  speed: 150
-  rotationSpeed: 300
+  speed: 700
+  maxAngularVelocity: 3000
+  rotationSpeed: 200
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  frontTireCollider: {fileID: 5288366813954420727}
+  backTireCollider: {fileID: 2375161024127645105}
 --- !u!1 &4237806181572432873
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +282,7 @@ GameObject:
   - component: {fileID: 2375161024127645105}
   m_Layer: 0
   m_Name: SuperMotoRearWheel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,7 +344,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6b32753e55025d44bb5be4f963e79085, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.20000002, g: 0.12941177, b: 0.13725491, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -424,7 +430,7 @@ GameObject:
   - component: {fileID: 5288366813954420727}
   m_Layer: 0
   m_Name: SuperMotoFrontWheel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,7 +492,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: fc7babcde159b1b4f8e1ea9374f293c6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21176472, g: 0.13725491, b: 0.14509805, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
