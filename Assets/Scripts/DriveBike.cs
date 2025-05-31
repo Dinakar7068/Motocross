@@ -86,6 +86,13 @@ public class BikeController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);  
         }
 
-       
+        if (other.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SaveManager.instance.money += 10;
+            SaveManager.instance.Save();
+        }
+
+
     }
 }
